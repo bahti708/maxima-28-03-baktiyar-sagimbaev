@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
 	line-height: 1.4;
 	color: #000;
@@ -10,12 +10,11 @@ body {
   background-color: #414141;
 }
 
-
 header {
   margin-bottom: 40px;
 }
 
-.h1 {
+h1 {
   display: flex;
   color: aquamarine;
   text-transform: uppercase;
@@ -25,16 +24,31 @@ header {
 }
 
 .product {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 2px 1px 16px 5px #4f90ad;
   background-size: cover;
   background-color: white;
+  padding-bottom: 10px;
+  height: 450px;
+  width: 329px;
+  margin-top: 20px
 }
+
 .container {
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  min-height: 72px;
+  margin: 0 auto;
+
 }
+
 .image {
   margin-bottom: 10px;
 }
@@ -45,7 +59,7 @@ header {
   border-radius: 7px;
 }
 
-.info h3 {
+h3 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 0;
@@ -58,24 +72,21 @@ header {
 }
 
 .rating li{
-  display: inline-block;
-  color: orange;
+    display: inline-block;
+    color: orange;
 }
 
 .info_price {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
 }
 
 .button {
   border: none;
   width: 50px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: lime;
   color: white;
   border-radius: 10px;
